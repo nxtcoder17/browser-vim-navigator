@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "Browser Vim Navigator",
+	"version": "0.0.0",
+
+	"description": "A simple vim like navigator for browser",
+
+	"icons": {
+		"48": "icons/logo-48.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content-scripts/vim.js"]
+		}
+	],
+
+	"permissions": ["activeTab", "storage", "scripting"]
+}
+

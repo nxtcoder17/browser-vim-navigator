@@ -1,0 +1,22 @@
+{
+  "name": "browser-vim-navigator",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@biomejs/biome": "2.4.8",
+    "@types/bun": "latest",
+    "rolldown-vite": "^7.3.1",
+    "vite": "^8.0.1",
+    "vite-plugin-solid": "^2.11.11"
+  },
+  "scripts": {
+    "build": "bun ./vite.build.js"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "solid-js": "^1.9.11"
+  }
+}
