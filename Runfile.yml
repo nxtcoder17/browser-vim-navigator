@@ -1,5 +1,3 @@
-version: 3
-
 env:
   VITE_BUILD_DIR_FIREFOX: ".dist/firefox"
   VITE_BUILD_DIR_CHROME: ".dist/chrome"
@@ -11,7 +9,7 @@ tasks:
     cmd:
       - rm -rf "$VITE_BUILD_DIR_FIREFOX"
       - bun run build
-      - cp src/manifest/firefox/manifest.json $VITE_BUILD_DIR_FIREFOX/manifest.json
+      - cp src/manifests/firefox.manifest.json $VITE_BUILD_DIR_FIREFOX/manifest.json
       - cp -r icons $VITE_BUILD_DIR_FIREFOX
 
   firefox:dev:
